@@ -1,16 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h1 {
-    
+    font-family: sans-serif;
+    list-style-type: none;
 }
 
 header {
     /*background-color: white;*/
-    background-color: rgb(255, 217, 0);
+    background-color: rgb(255, 187, 1);
     height: 5vh;
     position: fixed;
     width: 100%;
@@ -21,6 +18,7 @@ header {
     justify-content: center;
     gap: 2%;
     align-items: center;
+    font-size: larger;
 }
 
 .header nav ul{
@@ -28,9 +26,26 @@ header {
     gap: 20%;
 }
 
+.navitem{
+    text-decoration: none;
+    color: black;
+}
+
+.navitem:hover {
+    text-decoration: underline;
+}
+
+.current{
+    text-decoration: underline;
+}
+
 img.logo {
     width: 2%;
     display: flex;
+}
+
+body{
+    background-color: #f5f2e3;
 }
 
 .phare {
@@ -41,7 +56,122 @@ img.logo {
 }
 
 .sec_2 {
-    background: rgb(255, 217, 0);
+    /*background: rgb(255, 187, 1);*/
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.sec_2 div {
+    background-color: rgb(255, 187, 1);
+    height: 35vh;
+    justify-content: center;
+    padding-top: 5%;
+    text-align: center;
+    border-radius: 1%;
+}
+
+
+/*C'était vraiment pas responsive dans la section 2, donc il me fallait bien de quoi rendre ça un peu mieux (même si c'est pas parfait)*/
+@media (min-width: 1350px){
+    .sec_2 div {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 1349px){
+    @media (min-width: 800px){
+        .sec_2 div {
+            height: 50vh;
+        }
+    }
+}
+
+.sec_2 div p{
+    margin-top: 3%;
+}
+
+.sec_2 div img{
+    width: 80%;
+    margin-top: 5%;
+    background-color: #f3bd49;
+    border-radius: 50em;
+}
+
+.sec_2 h1{
+    color: #f5f2e3;
+    font-size: xx-large;
+}
+
+.knowmore{
+    display: block;
+    padding-top: 6%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f6abe;
+    font-family: sans-serif;
+}
+
+.knowmore:hover{
+    text-decoration: underline;
+}
+
+.sec_3{
     display: flex;
     justify-content: space-evenly;
+    gap: 2%;
+}
+
+.sec_3 .bigdiv{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: #f5f2e3;
+}
+
+.carac {
+    margin-top: 1%;
+    border-radius: 1%;
+    border: solid white 1px;
+    padding: 5%;
+    background-color: #f5f3ec;
+}
+
+.sec_3 p {
+    padding-top: 2%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 187, 1);
+    height: 10vh;
+    align-items: center;
+}
+
+footer div {
+    padding: 5%;
+    background-color: rgb(255, 187, 1);
+}
+
+footer a{
+    color:black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.video{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f2e3;
+    color: #f5f1e3;
+    border: none;
+    
 }
